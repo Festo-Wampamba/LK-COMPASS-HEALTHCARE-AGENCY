@@ -1,711 +1,546 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>LK COMPASS HEALTHCARE AGENCY</title>
 
-    <!-- favicon -->
-    <link rel="icon" href="favicon.png" sizes="20x20" type="image/png" />
-    <!-- flaticon -->
-    <link rel="stylesheet" href="assets/css/flaticon.css" />
-    <!-- Fonts Awesome Icons -->
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <!-- animate -->
-    <link rel="stylesheet" href="assets/css/animate.css" />
-    <!--Video Popup-->
-    <link rel="stylesheet" href="assets/css/rpopup.min.css" />
-    <!--Progress bar Css-->
-    <link rel="stylesheet" href="assets/css/jquery.rprogessbar.min.css" />
-    <!--Slick Carousel-->
-    <link rel="stylesheet" href="assets/css/slick.css" />
-    <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <!-- responsive Stylesheet -->
-    <link rel="stylesheet" href="assets/css/responsive.css" />
-  </head>
-  <body>
-    <!-- preloader area start -->
-    <div class="preloader" id="preloader">
-      <div class="preloader-inner">
-        <div class="spinner">
-          <div class="dot1"></div>
-          <div class="dot2"></div>
+<head>
+    <meta charset="utf-8">
+    <title>Klinik - Clinic Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
         </div>
-      </div>
     </div>
-    <!-- preloader area end -->
+    <!-- Spinner End -->
 
-    <!--Search Popup Start Here-->
-    <div class="searchOverlay">
-      <div class="sidenav-wrap">
-        <div class="logo-area">
-          <div class="logo">
-            <a href="#">
-              <img src="assets/img/logo-3.png" alt="logo" />
-            </a>
-          </div>
-        </div>
-        <!--Logo End-->
-        <div class="overlay-content">
-          <span class="closebtn" title="Close Overlay">×</span>
-          <form>
-            <div class="Search-section">
-              <input
-                type="text"
-                placeholder="What can we help you with?"
-                name="search"
-              />
-              <button type="submit"><i class="fa fa-search"></i></button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-    <!--Search Popup End Here-->
 
-    <!--Side Nav Popup Start Here-->
-    <div class="sidenav">
-      <div class="sidenav-wrap">
-        <div class="logo-area">
-          <div class="logo">
-            <a href="#">
-              <img src="assets/img/logo-3.png" alt="logo" />
-            </a>
-          </div>
-        </div>
-        <!--Logo End-->
-        <div class="overlay-content">
-          <span class="closebtn" title="Close Overlay">×</span>
-          <div class="overlay-menu">
-            <ul class="side-menu">
-              <li class="items">
-                <a class="itme-nav" href="#">Useful Links</a>
-              </li>
-              <li class="items"><a class="itme-nav" href="#">Home</a></li>
-              <li class="items"><a class="itme-nav" href="#">Login</a></li>
-              <li class="items"><a class="itme-nav" href="#">Blog</a></li>
-              <li class="items">
-                <a class="itme-nav" href="#">Help Center</a>
-              </li>
-            </ul>
-            <div class="social-icon">
-              <a class="icon" href="#" target="_blank"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a class="icon" href="#" target="_blank"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a class="icon" href="#" target="_blank"
-                ><i class="fab fa-twitter"></i
-              ></a>
-              <a class="icon" href="#" target="_blank"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--Side Nav Popup End Here-->
-
-    <!--Header Start Here-->
-    <header>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="header-area">
-            <div class="logo-area">
-              <a href="index.html">
-                <img src="assets/img/logo-3.png" alt="Nav Logo" />
-              </a>
-            </div>
-            <nav class="navbar navbar-area navbar-expand-lg">
-              <div class="container nav-container">
-                <div class="responsive-mobile-menu">
-                  <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#fortis_main_menu"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                  >
-                    <!-- <span class="navbar-toggler-icon"></span> -->
-                    <span class="cross-menu">
-                      <span class="bar1"></span>
-                      <span class="bar2"></span>
-                      <span class="bar3"></span>
-                    </span>
-                  </button>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light p-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
+                    <small>123 Street, New York, USA</small>
                 </div>
-                <div class="collapse navbar-collapse" id="fortis_main_menu">
-                  <ul class="navbar-nav">
-                    <li class="menu-item-has-children">
-                      <a href="index.html">Home</a>
-                      <ul class="sub-menu">
-                        <li><a href="index.html">Home</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="about.html">about</a></li>
-                    <li class="menu-item-has-children">
-                      <a href="#">Blog</a>
-                      <ul class="sub-menu">
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="blog-details.html">Blog Details</a></li>
-                      </ul>
-                    </li>
-                    <li class="menu-item-has-children current-menu-item">
-                      <a href="about.html">services</a>
-                    </li>
-                    <li class="menu-item-has-children">
-                      <a href="#">pages</a>
-                      <ul class="sub-menu">
-                        <li><a href="faq.html">faqs</a></li>
-                        <li><a href="login.html">Sign In</a></li>
-                        <li><a href="login-2.html">Sign Up</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="help-center.html">Help Center</a></li>
-                        <li><a href="membership.html">Membership</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="contact.html">contact</a></li>
-                  </ul>
+                <div class="h-100 d-inline-flex align-items-center py-3">
+                    <small class="far fa-clock text-primary me-2"></small>
+                    <small>Mon - Fri : 09.00 AM - 09.00 PM</small>
                 </div>
-              </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-phone-alt text-primary me-2"></small>
+                    <small>+012 345 6789</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn btn-sm-square rounded-circle bg-white text-primary me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-sm-square rounded-circle bg-white text-primary me-1" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-sm-square rounded-circle bg-white text-primary me-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-sm-square rounded-circle bg-white text-primary me-0" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h1 class="m-0 text-primary"><i class="far fa-hospital me-3"></i>LK Compass Healthcare</h1>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="service.html" class="nav-item nav-link">Service</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                        <a href="feature.html" class="dropdown-item">Feature</a>
+                        <a href="team.html" class="dropdown-item">Our Doctor</a>
+                        <a href="appointment.html" class="dropdown-item">Appointment</a>
+                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                        <a href="404.html" class="dropdown-item">404 Page</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            <a href="" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Appointment<i class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <h1 class="display-3 text-white mb-3 animated slideInDown">Services</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb text-uppercase mb-0">
+                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                    <li class="breadcrumb-item text-primary active" aria-current="page">Services</li>
+                </ol>
             </nav>
-            <!--Navbar area end here-->
-            <div class="search-area">
-              <div class="openSearchBtn">
-                <div class="search-icon">
-                  <i class="flaticon-search"></i>
-                </div>
-              </div>
-              <div class="open-side-menu">
-                <div class="menu-toggle">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-              </div>
-            </div>
-            <!--Search area end here-->
-          </div>
         </div>
-      </div>
-    </header>
-    <!--Header Area End Here-->
-
-    <!--Main Area Start Here-->
-    <main>
-      <!--Breadcrumb Section Start Here-->
-      <section
-        class="breadcrumb-area padding-90"
-        style="background-image: url(assets/img/bg/breadcrumb-bg.png)"
-      >
-        <div class="container-fluid">
-          <div class="row">
-            <div class="breadcrumb-content">
-              <div class="col-12 px-0">
-                <div class="page-title">
-                  <h1 class="heading-1">Our Services</h1>
-                </div>
-              </div>
-              <ul class="page-list">
-                <li><a href="index.html">Home</a></li>
-                <li>Services</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--Breadcrumb Section End Here-->
-
-      <!--Care Coordination Section Start Here-->
-      <section class="neurology-section padding-100">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 d-flex align-items-center">
-              <div class="neurology-content-area">
-                <div class="common-title padding-bottom-30">
-                  <h2 class="heading line-left">Care Coordination</h2>
-                </div>
-                <div class="neurology-content">
-                  <p>
-                    Our Care Coordination services are designed to ensure
-                    seamless and efficient management of your healthcare needs.
-                    We work closely with patients, families, and healthcare
-                    providers to develop personalized care plans that address
-                    individual health goals and challenges. Our team of
-                    dedicated care coordinators assists with scheduling
-                    appointments, managing medications, and connecting you with
-                    necessary resources and support services.
-                  </p>
-                </div>
-                <div class="main-btn-wrap margin-top-30">
-                  <a href="#" class="main-btn">Learn More</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="neurology-img-area">
-                <img src="assets/img/service/care1.jpg" alt="img" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--//  Care cordination Section End Here-->
-
-      <!--Care Section Start Here-->
-      <section class="dental-section">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-6 col-md-12 pl-0">
-              <div class="dental-img-area">
-                <div class="dental-img">
-                  <img src="assets/img/service/care2.jpg" alt="img" />
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-12 d-flex align-items-center">
-              <div class="dental-content-area">
-                <div class="common-title padding-bottom-30">
-                  <h2 class="heading line-left">Care Transitions</h2>
-                </div>
-                <div class="dental-content">
-                  <p>
-                    Our Care Transitions services are designed to support
-                    patients during critical transitions in their healthcare
-                    journey. Whether you are moving from hospital to home,
-                    transitioning between different care settings, or managing
-                    changes in your health condition, our team is here to help.
-                    We provide personalized care plans, coordination with
-                    healthcare providers, and access to necessary resources to
-                    ensure a smooth and safe transition.
-                  </p>
-                </div>
-                <div class="main-btn-wrap margin-top-30">
-                  <a href="#" class="main-btn">Learn More</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--// Care Transitions Section End Here-->
-
-      <!--Health Promotion and Wellness Coaching Section Start Here-->
-      <section class="neurology-section padding-100">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 d-flex align-items-center">
-              <div class="neurology-content-area">
-                <div class="common-title padding-bottom-30">
-                  <h2 class="heading line-left">
-                    Health Promotion and Wellness Coaching
-                  </h2>
-                </div>
-                <div class="neurology-content">
-                  <p>
-                    Our Health Promotion and Wellness Coaching services are
-                    designed to empower individuals to take control of their
-                    health and well-being. We offer personalized coaching
-                    sessions that focus on lifestyle changes, nutrition,
-                    exercise, stress management, and preventive care. Our goal
-                    is to help you achieve and maintain optimal health through
-                    education, motivation, and support.
-                  </p>
-                </div>
-                <div class="main-btn-wrap margin-top-30">
-                  <a href="#" class="main-btn">Learn More</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="neurology-img-area">
-                <img src="assets/img/service/care3.jpg" alt="img" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--// Health Promotion and Wellness Coaching Section End Here-->
-
-      <!-- Ophtalmologue Section Start Here-->
-      <section class="ophtalmologue-section">
-        <div class="container-fluid">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-3">
-                <div class="ophtalmologue-img">
-                  <img src="assets/img/service/care4.jpg" alt="img" />
-                </div>
-              </div>
-              <div class="col-lg-9 pr-0 d-flex align-items-center">
-                <div class="ophtalmologue-content-area">
-                  <div class="common-title padding-bottom-30">
-                    <h2 class="heading line-left">
-                      Individual and Family Support Services
-                    </h2>
-                  </div>
-                  <div class="ophtalmologue-content">
-                    <p>
-                      Our Individual and Family Support Services are designed to
-                      provide comprehensive assistance to individuals and
-                      families facing various challenges. We offer counseling,
-                      educational resources, and support groups to help you
-                      navigate difficult times and improve your overall
-                      well-being. Our team is dedicated to empowering you with
-                      the tools and support needed to achieve a better quality
-                      of life.
-                    </p>
-                  </div>
-                  <div class="main-btn-wrap margin-top-30">
-                    <a href="#" class="main-btn">Learn More</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--// Ophtalmologue Section End Here-->
-
-      <!--Orthopedics Section Start Here-->
-      <section class="neurology-section padding-100">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 d-flex align-items-center">
-              <div class="neurology-content-area">
-                <div class="common-title padding-bottom-30">
-                  <h2 class="heading line-left">
-                    Comprehensive Care Management
-                  </h2>
-                </div>
-                <div class="neurology-content">
-                  <p>
-                    Our Comprehensive Care Management services are designed to
-                    provide holistic and personalized care to individuals with
-                    complex health needs. We offer care coordination, health
-                    assessments, and care planning to help you manage your
-                    health conditions and achieve your health goals. Our team of
-                    experienced care managers works closely with you and your
-                    healthcare providers to ensure you receive the support and
-                    resources you need to live a healthy and fulfilling life.
-                  </p>
-                </div>
-                <div class="main-btn-wrap margin-top-30">
-                  <a href="#" class="main-btn">Learn More</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="neurology-img-area">
-                <img src="assets/img/service/care5.jpg" alt="img" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--// Orthopedics Section End Here-->
-
-      <!--Orthopedics Section Start Here-->
-      <section class="neurology-section">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="neurology-img-area">
-                <img src="assets/img/service/care6.jpg" alt="img" />
-              </div>
-            </div>
-
-            <div class="col-lg-7 d-flex align-items-center">
-              <div class="neurology-content-area margin-left-160">
-                <div class="common-title padding-bottom-30">
-                  <h2 class="heading line-left">
-                    Referral to Community and Social Support Services
-                  </h2>
-                </div>
-                <div class="neurology-content">
-                  <p>
-                    Our Referral to Community and Social Support Services are
-                    designed to connect you with community resources and support
-                    services that can help you address social, emotional, and
-                    environmental factors that impact your health. We work with
-                    a network of community organizations, social service
-                    agencies, and support groups to provide you with access to
-                    resources such as food assistance, housing support, mental
-                    health services, and more. Our goal is to help you build a
-                    strong support system and improve your overall well-being.
-                  </p>
-                </div>
-                <div class="main-btn-wrap margin-top-30">
-                  <a href="#" class="main-btn">Learn More</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--// Orthopedics Section End Here-->
-
-      <!--Make Appoinment Section Start Here-->
-      <section class="appointment-section padding-100">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12 col-md-12">
-              <!--Commen Title-->
-              <div class="common-title padding-bottom-50">
-                <h2 class="heading">Make an appointment</h2>
-              </div>
-            </div>
-            <div class="col-lg-12 col-md-12 px-4">
-              <div class="appointment-content">
-                <div class="tab-content">
-                  <div class="appointment-img-area">
-                    <img src="assets/img/04.png" alt="img" />
-                    <div class="doctor-info">
-                      <div class="name">
-                        <h6 class="heading-06">Dr George Abdreas Pompeia</h6>
-                      </div>
-                      <div class="designation">
-                        <span>Specialist cardiologue</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="appointment-form-area">
-                    <form>
-                      <div class="row">
-                        <div class="col-lg-6">
-                          <input
-                            type="text"
-                            name="your_name"
-                            placeholder="Your Name"
-                            class="form-control margin-15"
-                          />
-                          <input
-                            type="email"
-                            name="your_email"
-                            placeholder="Your Email"
-                            class="form-control margin-15"
-                          />
-                          <div class="custom-select margin-15">
-                            <select>
-                              <option>Dr. John Smith</option>
-                              <option>Dr. Emily Johnson</option>
-                              <option>Dr. Michael Brown</option>
-                              <option>Dr. Sarah Davis</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-lg-6">
-                          <div class="custom-select margin-15">
-                            <select>
-                              <option selected>Your Gender</option>
-                              <option>Male</option>
-                              <option>Female</option>
-                            </select>
-                          </div>
-                          <div class="calendar-icon margin-15">
-                            <span class="calendar">
-                              <label for="datepicker2">
-                                <input
-                                  type="text"
-                                  id="datepicker2"
-                                  class="form-control"
-                                  autocomplete="off"
-                                  placeholder="Date"
-                                />
-                              </label>
-                            </span>
-                            <span class="icon"
-                              ><i class="fas fa-calendar-week"></i
-                            ></span>
-                          </div>
-                          <div class="custom-select margin-15">
-                            <select>
-                              <option selected>Department</option>
-                              <option>Care Coordination</option>
-                              <option>Care Transitions</option>
-                              <option>
-                                Health Promotion and Wellness Coaching
-                              </option>
-                              <option>
-                                Individual and Family Support Services
-                              </option>
-                              <option>Comprehensive Care Management</option>
-                              <option>
-                                Referral to Community and Social Support
-                                Services
-                              </option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="main-btn-wrap style-02">
-                        <input
-                          class="main-btn"
-                          type="submit"
-                          value="Make Appointment"
-                        />
-                      </div>
-                    </form>
-                    <!--// Form End-->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--// Make Appoinment Section End Here-->
-    </main>
-
-    <!-- footer area start -->
-    <footer class="footer-area">
-      <div class="footer-top">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-4 col-md-6">
-              <div class="footer-widget widget logo-widget">
-                <a href="index.html">
-                  <img src="assets/img/logo-3.png" alt="Nav Logo" />
-                </a>
-                <ul>
-                  <li>
-                    <span class="icon"><i class="far fa-envelope"></i></span>
-                    ulrikaasimwe@gmail.com
-                  </li>
-                  <li>
-                    <span class="icon"><i class="fas fa-phone"></i></span>+1
-                    425996821
-                  </li>
-                  <li>
-                    <span class="icon">
-                      <i class="fas fa-map-marker-alt"></i></span
-                    >10115 Holly DR Everett WA
-                  </li>
-                </ul>
-                <div class="footer-social-icon">
-                  <a class="icon" href="#" target="_blank"
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a class="icon" href="#" target="_blank"
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                  <a class="icon" href="#" target="_blank"
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                  <a class="icon" href="#" target="_blank"
-                    ><i class="fab fa-linkedin-in"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-2 col-md-6">
-              <div class="footer-widget widget widget_nav_menu">
-                <h4 class="widget-title">Talk to us</h4>
-                <ul>
-                  <li><a href="#">about us</a></li>
-                  <li><a href="#">Registration</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">Contact</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-2 col-md-6">
-              <div class="footer-widget widget widget_nav_menu">
-                <h4 class="widget-title">Support</h4>
-                <ul>
-                  <li><a href="#">documentation </a></li>
-                  <li><a href="#">FAQs </a></li>
-                  <li><a href="#"> Conditions</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="subscribe-area">
-                <div class="footer-widget widget">
-                  <h4 class="widget-title">Newsletter</h4>
-                  <p>Get our offers & News in your inbox</p>
-                  <form>
-                    <div class="input-group">
-                      <input
-                        type="email"
-                        class="form-control"
-                        placeholder="Enter email"
-                      />
-                      <div class="input-group-append">
-                        <div class="input-group-text">
-                          <input type="submit" value="Subscribe" />
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="copyright-area">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="copyright-area-inner">
-                &copy; Copyright 2024
-                <span class="coypright-icon"></span>
-                <a href="#" target="_blank">LK COMPASS HEALTHCARE AGENCY</a>.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- footer area end -->
-
-    <!-- back to top area start -->
-    <div class="back-to-top">
-      <span class="back-top"><i class="flaticon-up-arrow"></i></span>
     </div>
-    <!-- back to top area end -->
+    <!-- Page Header End -->
 
-    <!--Jquery-->
-    <script src="assets/js/jquery-3.4.1.min.js"></script>
-    <!--Jquery Migrate-->
-    <script src="assets/js/jquery-migrate.min.js"></script>
-    <!--Jquery UI-->
-    <script src="assets/js/jquery-ui.js"></script>
-    <!-- bootstrap -->
-    <script src="assets/js/bootstrap.min.js"></script>
-    <!--Waypoints-->
-    <script src="assets/js/waypoints.min.js"></script>
-    <!--Slick Carousel-->
-    <script src="assets/js/slick.min.js"></script>
-    <!-- wow -->
-    <script src="assets/js/wow.min.js"></script>
-    <!--Custom Select Box-->
-    <script src="assets/js/selectbox.min.js"></script>
-    <!--Custom Video Popup-->
-    <script src="assets/js/jquery.rPopup.js"></script>
-    <!-- countdown -->
-    <script src="assets/js/jquery.countdown.min.js"></script>
-    <!--Counter-->
-    <script src="assets/js/jQuery.rcounter.js"></script>
-    <!--rProgress bar-->
-    <script src="assets/js/jQuery.rProgressbar.min.js"></script>
-    <!--Google Map API-->
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVyNXoXHkqAwBKJaouZWhHPCP5vg7N0HQ&callback=initMap" async defer></script> -->
-    <!-- google map activate js -->
-    <script src="assets/js/goolg-map-activate.js"></script>
-    <!-- imageloaded -->
-    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/js/isotope.pkgd.min.js"></script>
-    <!-- main js -->
-    <script src="assets/js/main.js"></script>
-  </body>
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="d-inline-block border rounded-pill py-1 px-4">Services</p>
+                <h1>Professional Home Care Services</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item bg-light rounded h-100 p-5">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
+                            <i class="fa fa-heartbeat text-primary fs-4"></i>
+                        </div>
+                        <h4 class="mb-3">Skilled Nursing Care</h4>
+                        <p class="mb-4">Professional nursing services including medication management, wound care, and health monitoring in your home.</p>
+                        <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item bg-light rounded h-100 p-5">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
+                            <i class="fa fa-x-ray text-primary fs-4"></i>
+                        </div>
+                        <h4 class="mb-3">Personal Care</h4>
+                        <p class="mb-4">Assistance with daily activities, hygiene care, mobility support, and companionship services.</p>
+                        <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item bg-light rounded h-100 p-5">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
+                            <i class="fa fa-brain text-primary fs-4"></i>
+                        </div>
+                        <h4 class="mb-3">Post-Hospital Care</h4>
+                        <p class="mb-4">Specialized recovery care and rehabilitation support after hospital discharge.</p>
+                        <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item bg-light rounded h-100 p-5">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
+                            <i class="fa fa-wheelchair text-primary fs-4"></i>
+                        </div>
+                        <h4 class="mb-3">Respite Care</h4>
+                        <p class="mb-4">Temporary relief care for family caregivers, providing them with needed breaks while ensuring continuous care.</p>
+                        <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item bg-light rounded h-100 p-5">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
+                            <i class="fa fa-tooth text-primary fs-4"></i>
+                        </div>
+                        <h4 class="mb-3">Companion Care</h4>
+                        <p class="mb-4">Friendly companionship, light housekeeping, meal preparation, and assistance with daily activities.</p>
+                        <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item bg-light rounded h-100 p-5">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
+                            <i class="fa fa-vials text-primary fs-4"></i>
+                        </div>
+                        <h4 class="mb-3">24/7 Care Services</h4>
+                        <p class="mb-4">Round-the-clock care and supervision for clients needing continuous support and monitoring.</p>
+                        <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Feature Start -->
+    <div class="container-fluid bg-primary overflow-hidden my-5 px-lg-0">
+        <div class="container feature px-lg-0">
+            <div class="row g-0 mx-lg-0">
+                <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="p-lg-5 ps-lg-0">
+                        <p class="d-inline-block border rounded-pill text-light py-1 px-4">Features</p>
+                        <h1 class="text-white mb-4">Why Choose Us</h1>
+                        <p class="text-white mb-4 pb-2">We pride ourselves in delivering exceptional home care services with compassion, professionalism, and dedication. Our experienced team ensures you receive the highest quality care in the comfort of your home.</p>
+                        <div class="row g-4">
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light" style="width: 55px; height: 55px;">
+                                        <i class="fa fa-user-md text-primary"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="text-white mb-2">Certified</p>
+                                        <h5 class="text-white mb-0">Caregivers</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light" style="width: 55px; height: 55px;">
+                                        <i class="fa fa-check text-primary"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="text-white mb-2">Personalized</p>
+                                        <h5 class="text-white mb-0">Care Plans</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light" style="width: 55px; height: 55px;">
+                                        <i class="fa fa-comment-medical text-primary"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="text-white mb-2">Positive</p>
+                                        <h5 class="text-white mb-0">Consultation</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light" style="width: 55px; height: 55px;">
+                                        <i class="fa fa-headphones text-primary"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="text-white mb-2">24 Hours</p>
+                                        <h5 class="text-white mb-0">Support</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 pe-lg-0 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/feature.jpg" style="object-fit: cover;" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature End -->
+
+
+    <!-- Team Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="d-inline-block border rounded-pill py-1 px-4">Doctors</p>
+                <h1>Our Professional Care Team</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item position-relative rounded overflow-hidden">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/team-1.jpg" alt="">
+                        </div>
+                        <div class="team-text bg-light text-center p-4">
+                            <h5>Sarah Johnson, RN</h5>
+                            <p class="text-primary">Senior Care Specialist</p>
+                            <div class="team-social text-center">
+                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square" href="https://linkedin.com/in/sarah-johnson"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-square" href="mailto:sarah@lk-compass-healthcare.com"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item position-relative rounded overflow-hidden">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/team-2.jpg" alt="">
+                        </div>
+                        <div class="team-text bg-light text-center p-4">
+                            <h5>Michael Chen, LPN</h5>
+                            <p class="text-primary">Rehabilitation Specialist</p>
+                            <div class="team-social text-center">
+                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square" href="https://linkedin.com/in/michael-chen"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-square" href="mailto:michael@lk-compass-healthcare.com"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item position-relative rounded overflow-hidden">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/team-3.jpg" alt="">
+                        </div>
+                        <div class="team-text bg-light text-center p-4">
+                            <h5>Emily Rodriguez, CNA</h5>
+                            <p class="text-primary">Personal Care Assistant</p>
+                            <div class="team-social text-center">
+                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square" href="https://linkedin.com/in/emily-rodriguez"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-square" href="mailto:emily@lk-compass-healthcare.com"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item position-relative rounded overflow-hidden">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/team-4.jpg" alt="">
+                        </div>
+                        <div class="team-text bg-light text-center p-4">
+                            <h5>David Wilson, RN</h5>
+                            <p class="text-primary">Care Coordinator</p>
+                            <div class="team-social text-center">
+                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square" href="https://linkedin.com/in/david-wilson"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-square" href="mailto:david@lk-compass-healthcare.com"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+        <!-- Appointment Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="d-inline-block border rounded-pill py-1 px-4">Schedule Care</p>
+                    <h1 class="mb-4">Schedule Your Home Care Consultation</h1>
+                    <p class="mb-4">Let us help you arrange the perfect care plan for your needs. Our team of skilled caregivers is ready to provide professional and compassionate home healthcare services.</p>
+                    <div class="bg-light rounded d-flex align-items-center p-5 mb-4">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white" style="width: 55px; height: 55px;">
+                            <i class="fa fa-phone-alt text-primary"></i>
+                        </div>
+                        <div class="ms-4">
+                            <p class="mb-2">Call Us Anytime</p>
+                            <h5 class="mb-0">+1 (555) 123-4567</h5>
+                        </div>
+                    </div>
+                    <div class="bg-light rounded d-flex align-items-center p-5">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white" style="width: 55px; height: 55px;">
+                            <i class="fa fa-envelope-open text-primary"></i>
+                        </div>
+                        <div class="ms-4">
+                            <p class="mb-2">Email Us</p>
+                            <h5 class="mb-0">care@lk-compass-healthcare.com</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="bg-light rounded h-100 d-flex align-items-center p-5">
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control border-0" placeholder="Your Name" style="height: 55px;" required>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="email" class="form-control border-0" placeholder="Your Email" style="height: 55px;" required>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="tel" class="form-control border-0" placeholder="Your Phone" style="height: 55px;" required>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <select class="form-select border-0" style="height: 55px;" required>
+                                        <option selected disabled>Select Service Type</option>
+                                        <option value="skilled-nursing">Skilled Nursing Care</option>
+                                        <option value="personal-care">Personal Care</option>
+                                        <option value="rehabilitation">Rehabilitation</option>
+                                        <option value="companion-care">Companion Care</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <select class="form-select border-0" style="height: 55px;" required>
+                                        <option selected disabled>Select Caregiver</option>
+                                        <option value="sarah">Sarah Johnson, RN</option>
+                                        <option value="michael">Michael Chen, LPN</option>
+                                        <option value="emily">Emily Rodriguez, CNA</option>
+                                        <option value="david">David Wilson, RN</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="date" id="date" data-target-input="nearest">
+                                        <input type="text"
+                                            class="form-control border-0 datetimepicker-input"
+                                            placeholder="Preferred Date" data-target="#date" data-toggle="datetimepicker" style="height: 55px;" required>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control border-0" rows="5" placeholder="Describe your care needs" required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Schedule Consultation</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Appointment End -->
+
+
+        <!-- Testimonial Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="d-inline-block border rounded-pill py-1 px-4">Testimonials</p>
+                <h1>What Our Clients Say</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="img/testimonial-1.jpg" style="width: 100px; height: 100px;" alt="Mary Thompson">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>"The care my mother receives is exceptional. The caregivers are not just professionals, they've become like family. Their dedication and compassion have made such a difference in her quality of life."</p>
+                        <h5 class="mb-1">Mary Thompson</h5>
+                        <span class="fst-italic">Daughter of Client</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="img/testimonial-2.jpg" style="width: 100px; height: 100px;" alt="Robert Garcia">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>"After my surgery, I was worried about recovery at home. The skilled nursing care I received was outstanding. They helped me regain my independence while ensuring my safety and comfort."</p>
+                        <h5 class="mb-1">Robert Garcia</h5>
+                        <span class="fst-italic">Recovery Patient</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="img/testimonial-3.jpg" style="width: 100px; height: 100px;" alt="Susan Williams">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>"The companionship care services have been a blessing. Our caregiver is reliable, caring, and truly understands my father's needs. It gives me peace of mind knowing he's in good hands."</p>
+                        <h5 class="mb-1">Susan Williams</h5>
+                        <span class="fst-italic">Family Caregiver</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+        <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Contact Us</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>456 Care Avenue, Manhattan, NY 10001</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+1 (555) 123-4567</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>care@lk-compass-healthcare.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social rounded-circle" href="https://twitter.com/lkcompasscare"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social rounded-circle" href="https://facebook.com/lkcompasscare"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social rounded-circle" href="https://linkedin.com/company/lk-compass-healthcare"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Our Services</h5>
+                    <a class="btn btn-link" href="/services/skilled-nursing">Skilled Nursing Care</a>
+                    <a class="btn btn-link" href="/services/personal-care">Personal Care</a>
+                    <a class="btn btn-link" href="/services/rehabilitation">Rehabilitation Services</a>
+                    <a class="btn btn-link" href="/services/companion-care">Companion Care</a>
+                    <a class="btn btn-link" href="/services/respite-care">Respite Care</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="/about">About Us</a>
+                    <a class="btn btn-link" href="/contact">Contact Us</a>
+                    <a class="btn btn-link" href="/careers">Careers</a>
+                    <a class="btn btn-link" href="/terms">Terms & Conditions</a>
+                    <a class="btn btn-link" href="/privacy">Privacy Policy</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Newsletter</h5>
+                    <p>Subscribe to receive updates about our services and home healthcare tips.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="email" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="/">LK Compass Healthcare</a>, All Rights Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        Providing Quality Home Healthcare Since 2008
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
 </html>
